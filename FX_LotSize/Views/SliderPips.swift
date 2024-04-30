@@ -54,8 +54,8 @@ struct SliderPips: View {
             )
             .accentColor(.mint)
             .padding()
-            .onChange(of: selectedRangeTp) { newValue in
-                if let i = limitPips.firstIndex(of: newValue) {
+            .onChange(of: selectedRangeTp) {
+                if let i = limitPips.firstIndex(of: selectedRangeTp) {
                     index = i
                     rangeTp = rangeArray[index]
                 }
@@ -90,8 +90,8 @@ struct SliderPips: View {
             )
             .accentColor(.red)
             .padding()
-            .onChange(of: selectedRangeSl) { newValue in
-                if let i = limitPips.firstIndex(of: newValue) {
+            .onChange(of: selectedRangeSl) {
+                if let i = limitPips.firstIndex(of: selectedRangeSl) {
                     index = i
                     rangeSl = rangeArray[index]
                 }

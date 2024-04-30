@@ -60,7 +60,7 @@ struct ProductView: View {
                     .padding(.horizontal, 30)
                     .padding(.bottom)
                 }
-                .onChange(of: storeKit.purchasedCourses) { course in
+                .onChange(of: storeKit.purchasedCourses) { 
                     Task {
                         isPurchased = (try? await storeKit.isPurchased(product)) ?? false
                     }

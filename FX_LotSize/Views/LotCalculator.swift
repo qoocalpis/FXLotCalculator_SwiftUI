@@ -56,13 +56,13 @@ struct LotCalculator: View {
                         Text(price).font(.title3)
                     }
                 }
-                .onChange(of: price, perform: { newValue in
-                    if newValue != "" && !updatedFirstLastTimeTorigger {
+                .onChange(of: price){
+                    if price != "" && !updatedFirstLastTimeTorigger {
                         updatedLastTime = Date()
 //                        updatedLastTime.dateFormat = "yyyy/MM/dd HH:mm"
                         updatedFirstLastTimeTorigger.toggle()
                     }
-                })
+                }
                 Spacer()
                 Lot(vm: vm, rows: $rows)
                     .onAppear {
@@ -72,13 +72,13 @@ struct LotCalculator: View {
                         }
                         vm.currencyPair = currencyPair.first!.currencyPair
                     }
-                    .onChange(of: rows, perform: { newValue in
+                    .onChange(of: rows){
                         DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
                             vm.rate = fetchRate(currencyPair: currencyPair.first!.currencyPair)
                             price = vm.rate
                         }
                         vm.currencyPair = currencyPair.first!.currencyPair
-                    })
+                    }
                 Spacer()
             }
             .navigationTitle("Position Size Calculator")
@@ -298,8 +298,8 @@ struct StopLoss: View {
                     Divider().frame(width: 70).background(Color.white)
                 }
             }
-            .onChange(of: vm.pip) { newValue in
-                if newValue.count == 4 { vm.pip = "1000" }
+            .onChange(of: vm.pip) {
+                if vm.pip.count == 4 { vm.pip = "1000" }
             }
             Text("pips")
         }
@@ -342,9 +342,9 @@ struct Calculator: View {
         .sheet(isPresented: $isShow) {
             ResultLotSize(vm: vm, oneLot: $oneLot, lotSize: $lotSize)
         }
-        .onChange(of: vm.balance) { _ in checkIsBool() }
-        .onChange(of: vm.pip) { _ in checkIsBool()}
-        .onChange(of: vm.percent) { _ in checkIsBool() }
+        .onChange(of: vm.balance) { checkIsBool() }
+        .onChange(of: vm.pip) { checkIsBool()}
+        .onChange(of: vm.percent) {  checkIsBool() }
     }
     
     func checkIsBool() {

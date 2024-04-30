@@ -60,9 +60,9 @@ struct RiskReward: View {
                 .sheet(isPresented: $showSheet) {
                     SliderPips(tpPips: $tpPips, slPips: $slPips, risk: $risk, reward: $reward)
                 }
-                .onChange(of: slPips, perform: { newValue in
-                    if Int(newValue) != 0 { pos = true }else { pos = false }
-                })
+                .onChange(of: slPips){
+                    if Int(slPips) != 0 { pos = true }else { pos = false }
+                }
                 ZStack {
                     Rectangle()
                         .fill(Color.white)

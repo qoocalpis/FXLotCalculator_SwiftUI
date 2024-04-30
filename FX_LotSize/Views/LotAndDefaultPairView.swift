@@ -66,11 +66,11 @@ struct DefaultPairView: View {
             array = fetchArray()
             intValue = fetchIntValue()
         }
-        .onChange(of: intValue) { newValue in
+        .onChange(of: intValue) {
             let realm = try! Realm()
             let tradeModelRecord = realm.objects(TradeModel_04.self).first!
             try! realm.write {
-                let record = TradeModel_04(value: ["id": 0, "lot": tradeModelRecord.lot, "losCutPercent": tradeModelRecord.losCutPercent, "defaultCurrencyPair": array[newValue]] as [String : Any])
+                let record = TradeModel_04(value: ["id": 0, "lot": tradeModelRecord.lot, "losCutPercent": tradeModelRecord.losCutPercent, "defaultCurrencyPair": array[intValue]] as [String : Any])
                 realm.add(record, update: .modified)
             }
             array = fetchArray()

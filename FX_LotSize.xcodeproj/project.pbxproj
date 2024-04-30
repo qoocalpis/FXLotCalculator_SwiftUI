@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0E6F1D2BCA1CC20071F079 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6F1C2BCA1CC20071F079 /* MainView.swift */; };
+		7F9A197F2BD312A800ABCED3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A197E2BD312A800ABCED3 /* AppConstants.swift */; };
+		7F9A19832BD3769B00ABCED3 /* CurrencyPairModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */; };
+		7F9A19862BD38FF000ABCED3 /* GoogleSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19852BD38FF000ABCED3 /* GoogleSheetService.swift */; };
+		7F9A19882BD3CEC800ABCED3 /* FirstLoadingRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19872BD3CEC800ABCED3 /* FirstLoadingRateView.swift */; };
+		7F9A198A2BD448E300ABCED3 /* LotCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19892BD448E300ABCED3 /* LotCalculatorView.swift */; };
+		7F9A198C2BD44A3300ABCED3 /* RiskRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A198B2BD44A3300ABCED3 /* RiskRewardView.swift */; };
+		7F9A198F2BD44E6200ABCED3 /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A198E2BD44E6200ABCED3 /* HomeTabBarView.swift */; };
+		7F9A19922BD5912400ABCED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A19942BD5912500ABCED3 /* Localizable.strings */; };
+		7F9A19982BD5967800ABCED3 /* GoogleSheetAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19972BD5967800ABCED3 /* GoogleSheetAPIModel.swift */; };
+		7FE8C8002BD663F9008AC849 /* CalculationSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8C7FF2BD663F9008AC849 /* CalculationSetCell.swift */; };
+		7FE8C8022BD66410008AC849 /* LotSizeCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8C8012BD66410008AC849 /* LotSizeCalculatorModel.swift */; };
+		933E77D32BC8220B00212990 /* LotCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E77D22BC8220B00212990 /* LotCalculatorApp.swift */; };
+		933E77D72BC8221600212990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933E77D62BC8221600212990 /* Assets.xcassets */; };
+		933E77DA2BC8221600212990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933E77D92BC8221600212990 /* Preview Assets.xcassets */; };
+		936A5DEE2BC91D1A00BC445E /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DED2BC91D1900BC445E /* HomeTabView.swift */; };
+		936A5DF12BC91E1D00BC445E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 936A5DF02BC91E1D00BC445E /* Realm */; };
+		936A5DF32BC91E1D00BC445E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 936A5DF22BC91E1D00BC445E /* RealmSwift */; };
+		936A5DF62BC91E9C00BC445E /* TradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF52BC91E9C00BC445E /* TradeModel.swift */; };
+		936A5DFA2BC91EEF00BC445E /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF72BC91EEF00BC445E /* StoreKitManager.swift */; };
+		936A5DFB2BC91EEF00BC445E /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF82BC91EEF00BC445E /* NetworkState.swift */; };
+		936A5DFC2BC91EEF00BC445E /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF92BC91EEF00BC445E /* CurrencyPair.swift */; };
+		936A5E062BC91F0E00BC445E /* ResultLotSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */; };
+		936A5E072BC91F0E00BC445E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DFF2BC91F0D00BC445E /* TestView.swift */; };
+		936A5E082BC91F0E00BC445E /* FavoriteCurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */; };
+		936A5E092BC91F0E00BC445E /* AllCurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */; };
+		936A5E0A2BC91F0E00BC445E /* SliderPips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E022BC91F0D00BC445E /* SliderPips.swift */; };
+		936A5E0B2BC91F0E00BC445E /* CurrencyPairList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E032BC91F0D00BC445E /* CurrencyPairList.swift */; };
+		936A5E0C2BC91F0E00BC445E /* LotCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E042BC91F0D00BC445E /* LotCalculator.swift */; };
+		936A5E0D2BC91F0E00BC445E /* RiskReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E052BC91F0E00BC445E /* RiskReward.swift */; };
+		936A5E112BC91F2B00BC445E /* LotAndDefaultPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E0E2BC91F2B00BC445E /* LotAndDefaultPairView.swift */; };
+		936A5E122BC91F2B00BC445E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E0F2BC91F2B00BC445E /* Settings.swift */; };
+		936A5E132BC91F2B00BC445E /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E102BC91F2B00BC445E /* ProductView.swift */; };
+		936A5E1C2BC97AC200BC445E /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 936A5E1A2BC97AC200BC445E /* PropertyList.plist */; };
+		936A5E1D2BC97AC200BC445E /* Product.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 936A5E1B2BC97AC200BC445E /* Product.storekit */; };
+		936A5E202BC97E3A00BC445E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A5E1F2BC97E3A00BC445E /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F0E6F1C2BCA1CC20071F079 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7F9A197E2BD312A800ABCED3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairModel.swift; sourceTree = "<group>"; };
+		7F9A19852BD38FF000ABCED3 /* GoogleSheetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetService.swift; sourceTree = "<group>"; };
+		7F9A19872BD3CEC800ABCED3 /* FirstLoadingRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoadingRateView.swift; sourceTree = "<group>"; };
+		7F9A19892BD448E300ABCED3 /* LotCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotCalculatorView.swift; sourceTree = "<group>"; };
+		7F9A198B2BD44A3300ABCED3 /* RiskRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskRewardView.swift; sourceTree = "<group>"; };
+		7F9A198E2BD44E6200ABCED3 /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
+		7F9A19932BD5912500ABCED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7F9A19962BD5915800ABCED3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7F9A19972BD5967800ABCED3 /* GoogleSheetAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetAPIModel.swift; sourceTree = "<group>"; };
+		7FE8C7FF2BD663F9008AC849 /* CalculationSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationSetCell.swift; sourceTree = "<group>"; };
+		7FE8C8012BD66410008AC849 /* LotSizeCalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotSizeCalculatorModel.swift; sourceTree = "<group>"; };
+		933E77CF2BC8220B00212990 /* FX_LotSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FX_LotSize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		933E77D22BC8220B00212990 /* LotCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotCalculatorApp.swift; sourceTree = "<group>"; };
+		933E77D62BC8221600212990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		933E77D92BC8221600212990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		936A5DED2BC91D1900BC445E /* HomeTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		936A5DF52BC91E9C00BC445E /* TradeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeModel.swift; sourceTree = "<group>"; };
+		936A5DF72BC91EEF00BC445E /* StoreKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		936A5DF82BC91EEF00BC445E /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		936A5DF92BC91EEF00BC445E /* CurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
+		936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultLotSize.swift; sourceTree = "<group>"; };
+		936A5DFF2BC91F0D00BC445E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCurrencyPair.swift; sourceTree = "<group>"; };
+		936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCurrencyPair.swift; sourceTree = "<group>"; };
+		936A5E022BC91F0D00BC445E /* SliderPips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderPips.swift; sourceTree = "<group>"; };
+		936A5E032BC91F0D00BC445E /* CurrencyPairList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPairList.swift; sourceTree = "<group>"; };
+		936A5E042BC91F0D00BC445E /* LotCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotCalculator.swift; sourceTree = "<group>"; };
+		936A5E052BC91F0E00BC445E /* RiskReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiskReward.swift; sourceTree = "<group>"; };
+		936A5E0E2BC91F2B00BC445E /* LotAndDefaultPairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotAndDefaultPairView.swift; sourceTree = "<group>"; };
+		936A5E0F2BC91F2B00BC445E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		936A5E102BC91F2B00BC445E /* ProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		936A5E1A2BC97AC200BC445E /* PropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		936A5E1B2BC97AC200BC445E /* Product.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Product.storekit; sourceTree = "<group>"; };
+		936A5E1F2BC97E3A00BC445E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		933E77CC2BC8220B00212990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936A5E202BC97E3A00BC445E /* StoreKit.framework in Frameworks */,
+				936A5DF32BC91E1D00BC445E /* RealmSwift in Frameworks */,
+				936A5DF12BC91E1D00BC445E /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F9A197D2BD3119900ABCED3 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A197E2BD312A800ABCED3 /* AppConstants.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		7F9A19802BD3761400ABCED3 /* DatabaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */,
+				936A5DF52BC91E9C00BC445E /* TradeModel.swift */,
+			);
+			path = DatabaseModels;
+			sourceTree = "<group>";
+		};
+		7F9A19842BD38FBD00ABCED3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				936A5DF72BC91EEF00BC445E /* StoreKitManager.swift */,
+				936A5DF82BC91EEF00BC445E /* NetworkState.swift */,
+				7F9A19852BD38FF000ABCED3 /* GoogleSheetService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7F9A198D2BD44DC500ABCED3 /* ControlViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A198E2BD44E6200ABCED3 /* HomeTabBarView.swift */,
+				7FE8C7FF2BD663F9008AC849 /* CalculationSetCell.swift */,
+			);
+			path = ControlViews;
+			sourceTree = "<group>";
+		};
+		933E77C62BC8220B00212990 = {
+			isa = PBXGroup;
+			children = (
+				936A5E1E2BC97E3A00BC445E /* Frameworks */,
+				933E77D12BC8220B00212990 /* FX_LotSize */,
+				933E77D02BC8220B00212990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		933E77D02BC8220B00212990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				933E77CF2BC8220B00212990 /* FX_LotSize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		933E77D12BC8220B00212990 /* FX_LotSize */ = {
+			isa = PBXGroup;
+			children = (
+				933E77D22BC8220B00212990 /* LotCalculatorApp.swift */,
+				7F9A19802BD3761400ABCED3 /* DatabaseModels */,
+				7F9A197D2BD3119900ABCED3 /* Consts */,
+				936A5DFD2BC91EFC00BC445E /* Views */,
+				936A5DF42BC91E8400BC445E /* Models */,
+				7F9A19842BD38FBD00ABCED3 /* Services */,
+				933E77D62BC8221600212990 /* Assets.xcassets */,
+				936A5E1B2BC97AC200BC445E /* Product.storekit */,
+				936A5E1A2BC97AC200BC445E /* PropertyList.plist */,
+				933E77D82BC8221600212990 /* Preview Content */,
+				7F9A19942BD5912500ABCED3 /* Localizable.strings */,
+			);
+			path = FX_LotSize;
+			sourceTree = "<group>";
+		};
+		933E77D82BC8221600212990 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				933E77D92BC8221600212990 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		936A5DF42BC91E8400BC445E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				936A5DF92BC91EEF00BC445E /* CurrencyPair.swift */,
+				7F9A19972BD5967800ABCED3 /* GoogleSheetAPIModel.swift */,
+				7FE8C8012BD66410008AC849 /* LotSizeCalculatorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		936A5DFD2BC91EFC00BC445E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A198D2BD44DC500ABCED3 /* ControlViews */,
+				936A5DED2BC91D1900BC445E /* HomeTabView.swift */,
+				7F0E6F1C2BCA1CC20071F079 /* MainView.swift */,
+				936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */,
+				936A5E032BC91F0D00BC445E /* CurrencyPairList.swift */,
+				936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */,
+				936A5E042BC91F0D00BC445E /* LotCalculator.swift */,
+				936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */,
+				936A5E052BC91F0E00BC445E /* RiskReward.swift */,
+				936A5E022BC91F0D00BC445E /* SliderPips.swift */,
+				936A5DFF2BC91F0D00BC445E /* TestView.swift */,
+				936A5E0E2BC91F2B00BC445E /* LotAndDefaultPairView.swift */,
+				936A5E102BC91F2B00BC445E /* ProductView.swift */,
+				936A5E0F2BC91F2B00BC445E /* Settings.swift */,
+				7F9A19872BD3CEC800ABCED3 /* FirstLoadingRateView.swift */,
+				7F9A19892BD448E300ABCED3 /* LotCalculatorView.swift */,
+				7F9A198B2BD44A3300ABCED3 /* RiskRewardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		936A5E1E2BC97E3A00BC445E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936A5E1F2BC97E3A00BC445E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		933E77CE2BC8220B00212990 /* FX_LotSize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933E77DD2BC8221600212990 /* Build configuration list for PBXNativeTarget "FX_LotSize" */;
+			buildPhases = (
+				933E77CB2BC8220B00212990 /* Sources */,
+				933E77CC2BC8220B00212990 /* Frameworks */,
+				933E77CD2BC8220B00212990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FX_LotSize;
+			packageProductDependencies = (
+				936A5DF02BC91E1D00BC445E /* Realm */,
+				936A5DF22BC91E1D00BC445E /* RealmSwift */,
+			);
+			productName = FX_LotSize;
+			productReference = 933E77CF2BC8220B00212990 /* FX_LotSize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		933E77C72BC8220B00212990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					933E77CE2BC8220B00212990 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 933E77CA2BC8220B00212990 /* Build configuration list for PBXProject "FX_LotSize" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 933E77C62BC8220B00212990;
+			packageReferences = (
+				936A5DEF2BC91E1C00BC445E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 933E77D02BC8220B00212990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				933E77CE2BC8220B00212990 /* FX_LotSize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		933E77CD2BC8220B00212990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9A19922BD5912400ABCED3 /* Localizable.strings in Resources */,
+				936A5E1D2BC97AC200BC445E /* Product.storekit in Resources */,
+				933E77DA2BC8221600212990 /* Preview Assets.xcassets in Resources */,
+				936A5E1C2BC97AC200BC445E /* PropertyList.plist in Resources */,
+				933E77D72BC8221600212990 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		933E77CB2BC8220B00212990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE8C8002BD663F9008AC849 /* CalculationSetCell.swift in Sources */,
+				7F9A197F2BD312A800ABCED3 /* AppConstants.swift in Sources */,
+				936A5E092BC91F0E00BC445E /* AllCurrencyPair.swift in Sources */,
+				7F9A19832BD3769B00ABCED3 /* CurrencyPairModel.swift in Sources */,
+				936A5DFB2BC91EEF00BC445E /* NetworkState.swift in Sources */,
+				936A5DFC2BC91EEF00BC445E /* CurrencyPair.swift in Sources */,
+				7F9A198A2BD448E300ABCED3 /* LotCalculatorView.swift in Sources */,
+				936A5E122BC91F2B00BC445E /* Settings.swift in Sources */,
+				7F9A19982BD5967800ABCED3 /* GoogleSheetAPIModel.swift in Sources */,
+				936A5E0C2BC91F0E00BC445E /* LotCalculator.swift in Sources */,
+				936A5E112BC91F2B00BC445E /* LotAndDefaultPairView.swift in Sources */,
+				936A5E082BC91F0E00BC445E /* FavoriteCurrencyPair.swift in Sources */,
+				936A5DF62BC91E9C00BC445E /* TradeModel.swift in Sources */,
+				7F9A19882BD3CEC800ABCED3 /* FirstLoadingRateView.swift in Sources */,
+				936A5DEE2BC91D1A00BC445E /* HomeTabView.swift in Sources */,
+				936A5E0D2BC91F0E00BC445E /* RiskReward.swift in Sources */,
+				7F9A19862BD38FF000ABCED3 /* GoogleSheetService.swift in Sources */,
+				7F9A198F2BD44E6200ABCED3 /* HomeTabBarView.swift in Sources */,
+				936A5E132BC91F2B00BC445E /* ProductView.swift in Sources */,
+				7F9A198C2BD44A3300ABCED3 /* RiskRewardView.swift in Sources */,
+				7FE8C8022BD66410008AC849 /* LotSizeCalculatorModel.swift in Sources */,
+				7F0E6F1D2BCA1CC20071F079 /* MainView.swift in Sources */,
+				936A5E0B2BC91F0E00BC445E /* CurrencyPairList.swift in Sources */,
+				933E77D32BC8220B00212990 /* LotCalculatorApp.swift in Sources */,
+				936A5E072BC91F0E00BC445E /* TestView.swift in Sources */,
+				936A5DFA2BC91EEF00BC445E /* StoreKitManager.swift in Sources */,
+				936A5E0A2BC91F0E00BC445E /* SliderPips.swift in Sources */,
+				936A5E062BC91F0E00BC445E /* ResultLotSize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F9A19942BD5912500ABCED3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F9A19932BD5912500ABCED3 /* en */,
+				7F9A19962BD5915800ABCED3 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		933E77DB2BC8221600212990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		933E77DC2BC8221600212990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		933E77DE2BC8221600212990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FX_LotSize/Preview Content\"";
+				DEVELOPMENT_TEAM = HQMBFBNNSU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuuki.LotCalculatorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		933E77DF2BC8221600212990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FX_LotSize/Preview Content\"";
+				DEVELOPMENT_TEAM = HQMBFBNNSU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuuki.LotCalculatorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		933E77CA2BC8220B00212990 /* Build configuration list for PBXProject "FX_LotSize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933E77DB2BC8221600212990 /* Debug */,
+				933E77DC2BC8221600212990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933E77DD2BC8221600212990 /* Build configuration list for PBXNativeTarget "FX_LotSize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933E77DE2BC8221600212990 /* Debug */,
+				933E77DF2BC8221600212990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		936A5DEF2BC91E1C00BC445E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		936A5DF02BC91E1D00BC445E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 936A5DEF2BC91E1C00BC445E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		936A5DF22BC91E1D00BC445E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 936A5DEF2BC91E1C00BC445E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 933E77C72BC8220B00212990 /* Project object */;
+}

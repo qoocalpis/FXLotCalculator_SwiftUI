@@ -10,8 +10,8 @@ import RealmSwift
 
 class CurrencyPairModel_04: Object, ObjectKeyIdentifiable {
     
-    @Persisted(primaryKey: true)  var currencyPair: String
-    @Persisted var selected: Bool
-    @Persisted var register: Bool
-    
+    @Persisted(primaryKey: true)  var currencyPair: String  //通貨ペア
+    @Persisted var selected: Bool                           //選択状態
+    @Persisted var register: Bool                           //登録状態
+
 }

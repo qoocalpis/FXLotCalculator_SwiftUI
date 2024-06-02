@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F0E6F1D2BCA1CC20071F079 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6F1C2BCA1CC20071F079 /* MainView.swift */; };
+		7F0E6F1D2BCA1CC20071F079 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6F1C2BCA1CC20071F079 /* Main.swift */; };
 		7F9A197F2BD312A800ABCED3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A197E2BD312A800ABCED3 /* AppConstants.swift */; };
 		7F9A19832BD3769B00ABCED3 /* CurrencyPairModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */; };
 		7F9A19862BD38FF000ABCED3 /* GoogleSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A19852BD38FF000ABCED3 /* GoogleSheetService.swift */; };
@@ -30,7 +30,6 @@
 		936A5DFB2BC91EEF00BC445E /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF82BC91EEF00BC445E /* NetworkState.swift */; };
 		936A5DFC2BC91EEF00BC445E /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DF92BC91EEF00BC445E /* CurrencyPair.swift */; };
 		936A5E062BC91F0E00BC445E /* ResultLotSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */; };
-		936A5E072BC91F0E00BC445E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5DFF2BC91F0D00BC445E /* TestView.swift */; };
 		936A5E082BC91F0E00BC445E /* FavoriteCurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */; };
 		936A5E092BC91F0E00BC445E /* AllCurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */; };
 		936A5E0A2BC91F0E00BC445E /* SliderPips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936A5E022BC91F0D00BC445E /* SliderPips.swift */; };
@@ -43,10 +42,11 @@
 		936A5E1C2BC97AC200BC445E /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 936A5E1A2BC97AC200BC445E /* PropertyList.plist */; };
 		936A5E1D2BC97AC200BC445E /* Product.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 936A5E1B2BC97AC200BC445E /* Product.storekit */; };
 		936A5E202BC97E3A00BC445E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A5E1F2BC97E3A00BC445E /* StoreKit.framework */; };
+		C91A86AC2C0B9B9F00596719 /* MainCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A86AB2C0B9B9F00596719 /* MainCurrencyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F0E6F1C2BCA1CC20071F079 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7F0E6F1C2BCA1CC20071F079 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7F9A197E2BD312A800ABCED3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairModel.swift; sourceTree = "<group>"; };
 		7F9A19852BD38FF000ABCED3 /* GoogleSheetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetService.swift; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		936A5DF82BC91EEF00BC445E /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		936A5DF92BC91EEF00BC445E /* CurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
 		936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultLotSize.swift; sourceTree = "<group>"; };
-		936A5DFF2BC91F0D00BC445E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCurrencyPair.swift; sourceTree = "<group>"; };
 		936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCurrencyPair.swift; sourceTree = "<group>"; };
 		936A5E022BC91F0D00BC445E /* SliderPips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderPips.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		936A5E1A2BC97AC200BC445E /* PropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
 		936A5E1B2BC97AC200BC445E /* Product.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Product.storekit; sourceTree = "<group>"; };
 		936A5E1F2BC97E3A00BC445E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C91A86AB2C0B9B9F00596719 /* MainCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrencyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +111,7 @@
 			children = (
 				7F9A19822BD3769B00ABCED3 /* CurrencyPairModel.swift */,
 				936A5DF52BC91E9C00BC445E /* TradeModel.swift */,
+				C91A86AB2C0B9B9F00596719 /* MainCurrencyModel.swift */,
 			);
 			path = DatabaseModels;
 			sourceTree = "<group>";
@@ -192,7 +193,7 @@
 			children = (
 				7F9A198D2BD44DC500ABCED3 /* ControlViews */,
 				936A5DED2BC91D1900BC445E /* HomeTabView.swift */,
-				7F0E6F1C2BCA1CC20071F079 /* MainView.swift */,
+				7F0E6F1C2BCA1CC20071F079 /* Main.swift */,
 				936A5E012BC91F0D00BC445E /* AllCurrencyPair.swift */,
 				936A5E032BC91F0D00BC445E /* CurrencyPairList.swift */,
 				936A5E002BC91F0D00BC445E /* FavoriteCurrencyPair.swift */,
@@ -200,7 +201,6 @@
 				936A5DFE2BC91F0D00BC445E /* ResultLotSize.swift */,
 				936A5E052BC91F0E00BC445E /* RiskReward.swift */,
 				936A5E022BC91F0D00BC445E /* SliderPips.swift */,
-				936A5DFF2BC91F0D00BC445E /* TestView.swift */,
 				936A5E0E2BC91F2B00BC445E /* LotAndDefaultPairView.swift */,
 				936A5E102BC91F2B00BC445E /* ProductView.swift */,
 				936A5E0F2BC91F2B00BC445E /* Settings.swift */,
@@ -251,7 +251,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					933E77CE2BC8220B00212990 = {
 						CreatedOnToolsVersion = 15.2;
@@ -321,10 +321,10 @@
 				936A5E132BC91F2B00BC445E /* ProductView.swift in Sources */,
 				7F9A198C2BD44A3300ABCED3 /* RiskRewardView.swift in Sources */,
 				7FE8C8022BD66410008AC849 /* LotSizeCalculatorModel.swift in Sources */,
-				7F0E6F1D2BCA1CC20071F079 /* MainView.swift in Sources */,
+				C91A86AC2C0B9B9F00596719 /* MainCurrencyModel.swift in Sources */,
+				7F0E6F1D2BCA1CC20071F079 /* Main.swift in Sources */,
 				936A5E0B2BC91F0E00BC445E /* CurrencyPairList.swift in Sources */,
 				933E77D32BC8220B00212990 /* LotCalculatorApp.swift in Sources */,
-				936A5E072BC91F0E00BC445E /* TestView.swift in Sources */,
 				936A5DFA2BC91EEF00BC445E /* StoreKitManager.swift in Sources */,
 				936A5E0A2BC91F0E00BC445E /* SliderPips.swift in Sources */,
 				936A5E062BC91F0E00BC445E /* ResultLotSize.swift in Sources */,
@@ -351,6 +351,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -414,6 +415,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

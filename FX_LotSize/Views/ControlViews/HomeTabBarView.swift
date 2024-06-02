@@ -27,14 +27,14 @@ struct HomeTabBarView: View {
                 HomeTabBarButtonView(
                     selected: $selected,
                     image: Image("CalculatorIcon"),
-                    color: Color.orange,
+                    color: Color(red: 0.3, green: 0.5, blue: 0.2),
                     tag: AppConstants.lotCalculatorViewTag
                 )
                 
                 HomeTabBarButtonView(
                     selected: $selected,
                     image: Image("RiskRewardRatioIcon"),
-                    color: Color.mint,
+                    color: Color.orange,
                     tag: AppConstants.RiskRewardViewTag
                 )
             }
@@ -56,21 +56,26 @@ struct HomeTabBarButtonView: View {
             selected = tag
         } label: {
             VStack(spacing: 0) {
-                image
-                    .renderingMode(.template)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 25)
-                    .foregroundColor(color)
-                    .opacity(selected != tag ? 0.3 : 1)
-                    .padding(8)
+                ZStack{
+                    image
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(Color.white)
+                        .opacity(selected != tag ? 0.7 : 1)
+                        .padding(2)
+                }
                 Rectangle()
-                    .fill(Color(red: 0.3, green: 0.5, blue: 0.2))
+                    .fill(color)
                     .frame(height: 6)
                     .opacity(selected != tag ? 0 : 1)
                     .padding([.leading, .trailing], 50)
             }
         }
     }
+}
+
+#Preview("Yes Preview") {
+    HomeTabBarView(selected: .constant(0))
 }
 

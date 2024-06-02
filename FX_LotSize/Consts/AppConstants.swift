@@ -45,5 +45,4 @@ enum AppConstants {
         ,"XAU/USD"
     ]
     static let defaultCurrencyPairs: [String] = ["USD/JPY", "EUR/USD", "GBP/JPY"]
-    
 }

@@ -29,9 +29,9 @@ struct LotCalculatorView: View {
                 
                 CalculationSetCell(
 //                    calculatorModel: LotSizeCalculatorModel,
-                    calculationTitle: "accountBalance",
-                    text: "",
-                    height: geometry.size.height, 
+                    calculationTitleText: Text("accountBalance"),
+                    infoText: Text(""),
+                    height: geometry.size.height,
                     width: nil
                 )
             }

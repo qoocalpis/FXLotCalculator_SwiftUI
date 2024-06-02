@@ -11,7 +11,7 @@ import RealmSwift
 
 struct HomeTabView: View {
     
-    @ObservedRealmObject var tradeModel: TradeModel_04
+    @ObservedResults(TradeModel_04.self) var tradeModel
     @ObservedResults(CurrencyPairModel_04.self) var currencyPairModel
     @ObservedObject var vm = Info()
     @State var flag = 0
@@ -32,14 +32,10 @@ struct HomeTabView: View {
             TabView(selection: $selected) {
                 LotCalculatorView()
                     .tag(AppConstants.lotCalculatorViewTag)
-                    .onAppear(){
-                        print("LotCalculatorView")
-                    }
+
                 RiskRewardView()
                     .tag(AppConstants.RiskRewardViewTag)
-                    .onAppear(){
-                        print("RiskRewardView")
-                    }
+
             }
             // スワイプアクションを有効化
             .disabled(false)

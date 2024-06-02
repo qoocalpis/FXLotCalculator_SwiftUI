@@ -9,12 +9,12 @@ import SwiftUI
 
 
 struct CalculationSetCell: View {
-//    @EnvironmentObject var calculatorModel: LotSizeCalculatorModel
-    let calculationTitle: String
-    let text: String
+    //    @EnvironmentObject var calculatorModel: LotSizeCalculatorModel
+    let calculationTitleText: Text
+    let infoText: Text
     let height: Double
     let width: Double?
-
+    
     var body: some View {
         ZStack{
             UnevenRoundedRectangle(
@@ -27,12 +27,26 @@ struct CalculationSetCell: View {
                 style: .continuous
             )
             .foregroundStyle(Color("CalculationSetCellBackGroundColor"))
-            Text(calculationTitle)
-
+            VStack{
+                HStack{
+                    calculationTitleText
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                    Spacer()
+                    infoText
+                }
+                Spacer()
+                HStack{
+                    Spacer()
+                    Text("sssss")
+                }
+            }
+            .padding(20)
+            
         }
         .frame(height: height / 5)
         .padding([.trailing, .top], 10)
-
     }
     
     private func getText() -> String {

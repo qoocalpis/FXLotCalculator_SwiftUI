@@ -12,7 +12,7 @@ struct LotCalculatorApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            Main()
 //            TestView()
         }
     }

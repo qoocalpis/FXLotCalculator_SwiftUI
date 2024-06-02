@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FirstLoadingRateView: View {
-    @State private var progress = 0.5
     var body: some View {
         ZStack {
             Color("FirstLoadingPageBackGroundColor")

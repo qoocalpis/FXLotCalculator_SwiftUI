@@ -10,29 +10,19 @@ import RealmSwift
 import Network
 
 
-struct MainView: View {
+struct Main: View {
     
-    @ObservedResults(TradeModel_04.self) var tradeModel
-    @State var flag = 0
     @State var rows = [[String: String]]()
-    @State var error: Error?
     @State private var success = false
-    @ObservedObject var network = MonitoringNetworkState()
-    @State private var isConnected = false
     
     var body: some View {
-        if let tradeModel = tradeModel.first , success {
-            HomeTabView(tradeModel: tradeModel, rows: $rows)
+        if success {
+            HomeTabView(rows: $rows)
         } else {
             FirstLoadingRateView()
                 .task(){
                     await callGoogleSheetAPI()
                     setRealmData()
-                }
-                .onChange(of: isConnected) {
-                    Task{
-                        await callGoogleSheetAPI()
-                    }
                 }
         }
     }
@@ -45,9 +35,26 @@ struct MainView: View {
         
         let realm = try! Realm()
         // データが存在するかどうかを確認
-        let existingData = realm.objects(TradeModel_04.self).first
+        let existingTradeModelData = realm.objects(TradeModel_04.self).first
+        if let _ = existingTradeModelData {
+            // データが存在する場合の処理
+        }else{
+            // データが存在しない場合の処理
+            createTradeModelData();
+        }
         
-        if let _ = existingData {
+        // データが存在するかどうかを確認
+        let existingMainCurrencyModelData = realm.objects(MainCurrencyModel.self).first
+        if let _ = existingMainCurrencyModelData {
+            // データが存在する場合の処理
+        }else{
+            // データが存在しない場合の処理
+            createMainCurrencyModelData();
+        }
+        
+        // データが存在するかどうかを確認
+        let existingCurrencyPairModelData = realm.objects(CurrencyPairModel_04.self).first
+        if let _ = existingCurrencyPairModelData {
             // データが存在する場合の処理
             try! realm.write {
                 let getRecord = realm.objects(CurrencyPairModel_04.self).where{ $0.selected == true }.first!
@@ -61,11 +68,11 @@ struct MainView: View {
             }
         } else {
             // データが存在しない場合の処理
-            createRealmData()
+            createCurrencyPairModelData()
         }
     }
     
-    func createRealmData() -> Void {
+    func createTradeModelData() -> Void {
         
         let realm = try! Realm()
         
@@ -73,15 +80,31 @@ struct MainView: View {
             let record = TradeModel_04(value: ["id": 0, "lot": 10000, "losCutPercent": 0, "defaultCurrencyPair": "USD/JPY"] as [String : Any])
             realm.add(record, update: .modified)
         }
-        for item in AppConstants.allCurrencyPairs {
-            if AppConstants.defaultCurrencyPairs.contains(item) {
+    }
+    
+    func createMainCurrencyModelData() -> Void {
+        
+        let realm = try! Realm()
+        
+        try! realm.write {
+            let record = MainCurrencyModel(value: ["mainCurrency": "JPY"] as [String : Any])
+            realm.add(record, update: .modified)
+        }
+    }
+    
+    func createCurrencyPairModelData() -> Void {
+        
+        let realm = try! Realm()
+        
+        for pair in AppConstants.allCurrencyPairs {
+            if AppConstants.defaultCurrencyPairs.contains(pair) {
                 try! realm.write {
-                    let record = CurrencyPairModel_04(value: ["currencyPair": item, "selected": false, "register": true] as [String : Any])
+                    let record = CurrencyPairModel_04(value: ["currencyPair": pair, "selected": false, "register": true] as [String : Any])
                     realm.add(record, update: .modified)
                 }
             }else {
                 try! realm.write {
-                    let record = CurrencyPairModel_04(value: ["currencyPair": item, "selected": false, "register": false] as [String : Any])
+                    let record = CurrencyPairModel_04(value: ["currencyPair": pair, "selected": false, "register": false] as [String : Any])
                     realm.add(record, update: .modified)
                 }
             }

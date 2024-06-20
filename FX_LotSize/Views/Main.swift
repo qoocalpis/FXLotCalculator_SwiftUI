@@ -12,12 +12,13 @@ import Network
 
 struct Main: View {
     
-    @State var rows = [[String: String]]()
     @State private var success = false
     
     var body: some View {
+        
         if success {
-            HomeTabView(rows: $rows)
+            HomeTabView()
+//            LotCalculatorView()
         } else {
             FirstLoadingRateView()
                 .task(){

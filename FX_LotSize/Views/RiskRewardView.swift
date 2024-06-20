@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RiskRewardView: View {
     init(){
-//        print("RiskRewardView")
     }
     var body: some View {
         Text("RiskRewardView")

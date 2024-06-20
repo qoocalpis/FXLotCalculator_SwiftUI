@@ -11,9 +11,20 @@ import SwiftUI
 struct CalculationSetCell: View {
     //    @EnvironmentObject var calculatorModel: LotSizeCalculatorModel
     let calculationTitleText: Text
-    let infoText: Text
+    let infoText: Text?
     let height: Double
-    let width: Double?
+    @Binding var textField: String
+    @Binding var focusEditable: Bool
+
+    
+    init(calculationTitleText: Text, infoText: Text? = nil, height: Double, textField: Binding<String>, focusEditable: Binding<Bool>) {
+        self.calculationTitleText = calculationTitleText
+        self.infoText = infoText
+        self.height = height
+        self._textField = textField
+        self._focusEditable = focusEditable
+
+    }
     
     var body: some View {
         ZStack{
@@ -39,14 +50,39 @@ struct CalculationSetCell: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Text("sssss")
+                    VStack{
+//                        TextField(AppConstants.strEmpty, text: $textField)
+//                            .keyboardType(.numberPad)
+//                            .frame(width: 200)
+//                            .multilineTextAlignment(.center)
+//                            .focused(self.$focus)
+//                            .toolbar {
+//                                if focus {
+//                                    ToolbarItemGroup(placement: .keyboard) {
+//                                        Spacer()         // 右寄せにする
+//                                        Button("閉じる") {
+//                                            focus = false  //  フォーカスを外す
+//                                        }
+//                                    }
+//                                }
+//                            }
+                        Button(action: {
+                        focusEditable = true
+
+                            print("aaaaaaaa")
+                        }, label: {
+                            Text(textField)
+                                .frame(width: 200,height: 30)
+                        })
+                        Rectangle()
+                            .frame(width: 200,height: 1)
+                    }
                 }
             }
             .padding(20)
-            
         }
-        .frame(height: height / 5)
-        .padding([.trailing, .top], 10)
+        .frame(height: height)
+        .padding(.trailing, 25)
     }
     
     private func getText() -> String {

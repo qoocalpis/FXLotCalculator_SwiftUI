@@ -13,6 +13,8 @@ enum AppConstants {
     static let strEmpty = ""
     static let lotCalculatorViewTag = 0
     static let RiskRewardViewTag = 1
+    static let spacer10: Double = 10
+    static let spacer20: Double = 20
     static let homeTabBarHeight : Double = 80
     static let allCurrencyPairs: [String] = [
         "AUD/CAD"

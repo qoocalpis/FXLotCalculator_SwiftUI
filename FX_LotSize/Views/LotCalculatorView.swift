@@ -183,7 +183,7 @@ struct LotCalculatorView: View {
 //                                .background(Color.gray)
 //                                .clipShape(RoundedRectangle(cornerRadius: 50))
                             }
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 50)
+                            .frame(width: 100,height: 100)
                         }
                     }
                     

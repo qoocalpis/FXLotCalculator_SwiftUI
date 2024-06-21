@@ -19,7 +19,7 @@ struct LotCalculatorView: View {
     @State var accountBalanceText = AppConstants.strEmpty
     @State var lossAllowanceText = AppConstants.strEmpty
     @State var lossTolerancePipsText = AppConstants.strEmpty
-    @State var focusEditable = true
+    @State var focusEditable = false
     @FocusState var focusKeyBoard
     
     init(){
@@ -142,54 +142,7 @@ struct LotCalculatorView: View {
                 
                 Color.black
                     .opacity(0.9)
-                VStack{
-                    Spacer()
-                    ScrollView(.horizontal){
-                        HStack{
-                            
-                            
-                            ForEach(0..<13){index in
-                                Text("aaaaaa")
-                                    .background(Color.red)
-//                                ZStack(alignment: .center){
-//                                    
-//                                    VStack{
-//                                        
-//                                        TextField(AppConstants.strEmpty, text: $accountBalanceText)
-//                                            .keyboardType(.numberPad)
-//                                            .frame(width: 200)
-//                                            .multilineTextAlignment(.center)
-//                                            .focused($focusKeyBoard)
-//                                            .toolbar {
-//                                                if focusKeyBoard {
-//                                                    ToolbarItemGroup(placement: .keyboard) {
-//                                                        Spacer()         // 右寄せにする
-//                                                        Button("閉じる") {
-//                                                            focusKeyBoard = false  //  フォーカスを外す
-//                                                            focusEditable = false
-//                                                        }
-//                                                    }
-//                                                }
-//                                            }
-//                                        
-//                                        Button(action: {
-//                                            focusEditable = false
-//                                        }){
-//                                            /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-//                                        }
-//                                    }
-//                                }
-//                                .frame(width: geometry.size.width, height: 200)
-//                                .background(Color.gray)
-//                                .clipShape(RoundedRectangle(cornerRadius: 50))
-                            }
-                            .frame(width: 100,height: 100)
-                        }
-                    }
-                    
-                    
-                    Spacer()
-                }
+                
             }
         }
         .ignoresSafeArea(.all)
